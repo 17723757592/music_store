@@ -1,6 +1,7 @@
 <template>
   <div id="app">  
     <BannerName></BannerName>
+    //加一个key使得路由跳转时参数不同也可以立即（不刷新）得到期待的页面（而不是路劲变了，网页相关数据没有改变）
     <router-view :key="$route.fullPath"><HomePage></HomePage></router-view>
     <BottomName></BottomName>
   </div>
